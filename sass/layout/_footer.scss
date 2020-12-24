@@ -1,0 +1,43 @@
+.footer {
+    background-color: #3f3f3f;
+    padding: 5rem 0;
+    color: $color-light-grey;
+    font-size: 0.9rem;
+    
+    &-logo-box {
+        max-width: 10%;
+        margin: auto;
+        margin-bottom: 4rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-navigation,
+    &-copyright {
+        flex-basis: 48%;
+        border-top: 1px solid $color-dark-grey;
+        padding-top: 1rem;
+    }
+
+    &-list {
+        list-style: none;
+        display: flex;
+    }
+
+    &-item {
+        padding-right: 0.9rem;
+        
+        a,
+        a:link,
+        a:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-light-grey;
+        }
+
+        a:hover {
+            color: $color-medium-green;
+        }
+    }
+}

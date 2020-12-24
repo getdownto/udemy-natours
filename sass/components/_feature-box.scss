@@ -1,0 +1,26 @@
+.section-features-box {
+    background-color: rgba($color-white, 0.8);
+    flex-basis: 22%;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px #00000042;
+    transition: all 0.3s;
+
+    &-icon {
+        font-size: 3.5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-light-green, $color-dark-green);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &-text {
+        margin: 1rem 0;
+    }
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.03);
+    }
+}

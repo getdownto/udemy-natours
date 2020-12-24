@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+
+    @include respond(tab-land) {
+        font-size: 80%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 75%;
+    }
+
+    @include respond(big) {
+        font-size: 110%;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+}

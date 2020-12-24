@@ -1,0 +1,87 @@
+.form {
+    &-group {
+        margin-bottom: 1.1rem;
+    }
+
+    &-radio-group{
+        display: flex;
+        flex-basis: 49%;
+    }
+
+    &-input {
+        padding: 0.7rem 1rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, 0.5);
+        font-family: inherit;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        transition: all 0.3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 10px 20px #3a3a3a3a;
+            border-bottom: 3px solid $color-medium-green;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-dark-orange;
+        }
+
+    }
+
+    &-input:placeholder-shown + &-label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2.2rem);
+    }
+
+    &-label {
+        display: block;
+        font-size: 0.85rem;
+        margin-left: 0.7rem;
+        margin-top: 0.3rem;
+        transition: all 0.3s;
+    }
+
+    &-radio-input {
+        display: none;
+    }
+
+    &-radio-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &-radio-button {
+        display: flex;
+        justify-content: center;
+        width: 1.3rem;
+        height: 1.3rem;
+        border: 3px solid $color-medium-green;
+        border-radius: 50%;
+        margin-right: 5px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background-color: $color-medium-green;
+            align-self: center;
+            opacity: 0;
+            transition: all 0.1s;
+        }
+    }
+
+    &-radio-input:checked ~ &-radio-label &-radio-button::after {
+        opacity: 1;
+
+    }
+}
+
+.radio-buttons-container {
+    display: flex;
+}
