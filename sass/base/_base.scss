@@ -27,4 +27,9 @@ html {
     justify-content: space-between;
     max-width: 70%;
     margin: auto;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        max-width: 85%;
+    }
 }

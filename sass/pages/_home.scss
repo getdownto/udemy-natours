@@ -7,6 +7,11 @@
     &-images {
         flex-basis: 48%;
     }
+
+    @include respond(tab-port) {
+        margin-top: 0;
+        padding: 7rem 0;
+    }
 }
 
 .section-features {
@@ -15,6 +20,12 @@
     background: linear-gradient(to right bottom, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)), url('../img/nat-10.jpg') top;
     background-size: cover;
     clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
+
+    @include respond(tab-port) {
+        margin-top: 20rem;
+        padding: 7rem 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
 
 .section-tours {
@@ -22,6 +33,11 @@
     padding: 15rem 0;
     padding-bottom: 3rem;
     margin-top: -25vh;
+
+    @include respond(tab-port) {
+        margin-top: 0;
+        padding: 5rem 0;
+    }
 } 
 
 .section-stories {

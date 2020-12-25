@@ -6,6 +6,10 @@ body {
     line-height: 1.7;
     color: $color-dark-grey;
     padding: 30px;
+
+    @include respond(phone) {
+        padding: 0;
+    };
 }
 
 .heading-primary {
@@ -22,6 +26,11 @@ body {
         font-weight: 400;
         letter-spacing: 2rem;
         animation: moveInLeft 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 2.9rem;
+            letter-spacing: 0.7rem;
+        };
     }
     
     &-sub {
@@ -29,6 +38,12 @@ body {
         font-weight: 400;
         letter-spacing: 1rem;
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 1.1rem;
+            letter-spacing: 0.4rem;
+
+        };
     }
 }
 
@@ -42,6 +57,14 @@ body {
     background-clip: text;
     color: transparent;
     margin-bottom: 5rem;
+
+    @include respond(tab-port) {
+        font-size: 1.8rem;
+    };
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+    };
 }
 
 .heading-tertiary {

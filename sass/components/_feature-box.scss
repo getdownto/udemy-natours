@@ -7,6 +7,12 @@
     box-shadow: 0 10px 20px #00000042;
     transition: all 0.3s;
 
+    @include respond(tab-port) {
+        margin: auto;
+        margin-bottom: 2rem;
+        max-width: 80%;
+    }
+
     &-icon {
         font-size: 3.5rem;
         display: inline-block;
