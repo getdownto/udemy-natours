@@ -19,7 +19,7 @@
     margin-top: -25vh;
     background: linear-gradient(to right bottom, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)), url('../img/nat-10.jpg') top;
     background-size: cover;
-    clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 
     @include respond(tab-port) {
         margin-top: 20rem;
@@ -32,7 +32,8 @@
     background-color: $color-light-grey;
     padding: 15rem 0;
     padding-bottom: 3rem;
-    margin-top: -25vh;
+    margin-top: -30vh;
+    min-height: 130vh;
 
     @include respond(tab-port) {
         margin-top: 0;
